@@ -50,7 +50,7 @@ def generate_list(root_dir, fp):
     if file_type == FileTypes.IMAGE:
         extnames = [".JPEG", ".JPG", ".jpeg", ".jpg"]
     elif file_type == FileTypes.LABEL:
-        extnames = [".json", ".xml", ".txt"]
+        extnames = [".json", ".xml"]
 
     for parent, dirnames, filenames in os.walk(root_dir):
         for dirname in dirnames:
